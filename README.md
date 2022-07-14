@@ -2,7 +2,7 @@
 WHAT IS DONE:
 1. Arrays: +
 2. Bool: -
-3.Date: -
+3. Date: -
 4. List: -
 5. Numbers: -
 6. Pattern: -
