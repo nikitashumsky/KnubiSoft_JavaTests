@@ -70,7 +70,7 @@ public interface BoolTasks {
      * @param generatedThirdDigit - a random number in specified range.
      * @param range - a range that can be 5 or 7.
      */
-    boolean orComplexFunction(int generatedFirstDigit, double generatedSecondDigit, int generatedThirdDigit, int range);
+    boolean orComplexFunction(int generatedFirstDigit, double generatedSecondDigit, double generatedThirdDigit, int range);
     /**
      * Convert params to string type and put the checker on them size.
      * Example 1:
