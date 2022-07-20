@@ -82,6 +82,42 @@ public class BoolTasksTest {
     }
 
     @Test
+    public void andComplexFunctionSuccessful() {
+        assertTrue(instance.andComplexFunction(4, 4.4, 5));
+        assertTrue(instance.andComplexFunction(4, 4.3, 5));
+        assertTrue(instance.andComplexFunction(4, 4.2, 5));
+        assertTrue(instance.andComplexFunction(4, 4.1, 5));
+        assertTrue(instance.andComplexFunction(3, 3.0, 5));
+    }
+
+    @Test
+    public void andComplexFunctionFail() {
+        assertFalse(instance.andComplexFunction(3, 4.5, 5));
+        assertFalse(instance.andComplexFunction(4, 4.5, 3));
+        assertFalse(instance.andComplexFunction(4, 4.6, 5));
+        assertFalse(instance.andComplexFunction(3, 3.5, 5));
+        assertFalse(instance.andComplexFunction(3, 3.7, 5));
+    }
+
+    @Test
+    public void orComplexFunctionSuccessful() {
+        assertTrue(instance.orComplexFunction(5, 5.3, 5.4, 7));
+        assertTrue(instance.orComplexFunction(4, 4.3, 4.4, 7));
+        assertTrue(instance.orComplexFunction(3, 3.0, 3.4, 7));
+        assertTrue(instance.orComplexFunction(4, 4.0, 4.1, 7));
+        assertTrue(instance.orComplexFunction(6, 6.3, 6.2, 7));
+    }
+
+    @Test
+    public void orComplexFunctionFail() {
+        assertFalse(instance.orComplexFunction(6, 6.7, 6.5, 7));
+        assertFalse(instance.orComplexFunction(3, 6.3, 6.2, 7));
+        assertFalse(instance.orComplexFunction(4, 6.8, 6.2, 5));
+        assertFalse(instance.orComplexFunction(3, 3.5, 3.6, 5));
+        assertFalse(instance.orComplexFunction(1, 1.5, 1.9, 5));
+    }
+
+    @Test
     public void isSameSizeArraySuccessful() {
         assertTrue(instance.isSameSizeArray(new Object[100], new Object[100]));
         assertTrue(instance.isSameSizeArray(new Object[30], new Object[30]));
