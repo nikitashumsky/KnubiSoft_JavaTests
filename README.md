@@ -6,7 +6,7 @@ WHAT IS DONE:
 4. List: -
 5. Numbers: +
 6. Pattern: +
-7. Queue: -
+7. Queue: +
 8. Reflection: -
 9. String: -
 10. Trees: -
