@@ -1,5 +1,9 @@
 package com.knubisoft.base.reflection.model;
 
+import com.knubisoft.base.validation.annotation.Entity;
+import jdk.jfr.Name;
+import lombok.SneakyThrows;
+
 public class InheritedEntryModel extends EntryModel {
 
     public InheritedEntryModel(String tableName) {
@@ -15,6 +19,7 @@ public class InheritedEntryModel extends EntryModel {
     }
 
     @Override
+    @Entity
     public EntryModel builder() {
         return super.builder();
     }
